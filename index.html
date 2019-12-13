@@ -9,6 +9,149 @@
     <title>Document</title>
 </head>
 <body>
-<h1 class="title">hello</h1>
+<header class="header">
+    <div class="logo">
+        <a href="#" target="_blank" class="logo__link">
+            <img
+                src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="logo" class="logo__image">
+            <span class="logo__title hidden-mob">Бизнес маркет</span>
+        </a>
+    </div>
+
+    <a href="#" target="_blank" class="header__services text hidden-mob">Онлайн сервисы</a>
+
+    <div class="personal">
+        <a href="#" target="_blank" class="personal__link button">
+            <span class="personal__link_text hidden-mob">Личный кабинет</span>
+        </a>
+        <button class="menu-mobile"></button>
+    </div>
+</header>
+
+<main class="content">
+    <section class="banner">
+        <p class="banner__text">Покупайте бизнес сервисы онлайн,<br> оплатив с мобильного счета вашей
+            организации</p>
+        <h1 class="banner__title">Цифровые решения для&nbsp;вашего бизнеса</h1>
+        <a href="#" target="_blank" class="banner__link">Смотреть все сервисы</a>
+    </section>
+
+    <section class="tasks">
+        <h1 class="section-title">Какую задачу вы&nbsp;решаете?</h1>
+        <div class="tasks__changes">
+            <input type="radio" class="task__checkbox" id="publicity" name="radiobutton" checked>
+            <label class="task__label" for="publicity">
+                <span class="task__text">Реклама и продвижение</span>
+            </label>
+            <input type="radio" class="task__checkbox" id="automation" name="radiobutton">
+            <label class="task__label" for="automation">
+                <span class="task__text">Автоматизация процессов</span>
+            </label>
+            <input type="radio" class="task__checkbox" id="it" name="radiobutton">
+            <label class="task__label" for="it">
+                <span class="task__text">IT и безопасность</span>
+            </label>
+            <input type="radio" class="task__checkbox" id="base" name="radiobutton">
+            <label class="task__label" for="base">
+                <span class="task__text">Работа с клиентской базой</span>
+            </label>
+
+        </div>
+        <div class="cards">
+            <div class="cards__wrapper">
+                <div class="cards__item card">
+                    <div class="cards__header">
+                        <img src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="card-logo" class="card__logo">
+                        <h2 class="cards__title">Голосовой робот</h2>
+                        <p class="cards__description">Облачная платформа голосового робота для совершения автоматических
+                            звонков по готовым сценариям</p>
+                    </div>
+                    <div class="cards__footer">
+                        <p class="cards__bonus cards__bonus--flex"><b>10</b> звонков бесплатно</p>
+                        <a href="#" target="_blank" class="cards__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cards__item card">
+                    <div class="cards__header">
+                        <img src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="card-logo" class="card__logo">
+                        <h2 class="cards__title">МТС Коммуникатор</h2>
+                        <p class="cards__description">Услуга для корпоративных клиентов МТС, позволяющая организовать простой способ общения с клиентами</p>
+                    </div>
+                    <div class="cards__footer">
+                        <p class="cards__bonus">от <span>3 180</span> ₽/мес</p>
+                        <a href="#" target="_blank" class="cards__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cards__item card">
+                    <div class="cards__header">
+                        <img src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="card-logo" class="card__logo">
+                        <h2 class="cards__title">Цифровой ассистент</h2>
+                        <p class="cards__description">Наймите электронного сотрудника для общения с клиентами. Готовые решения для корпоративных клиентов МТС</p>
+                    </div>
+                    <div class="cards__footer">
+                        <a href="#" target="_blank" class="cards__link">Подробнее</a>
+                    </div>
+                </div>
+                <div class="cards__item card">
+                    <div class="card__header">
+                        <img src="https://assets.flocktory.com/uploads/clients/2679/4fbf0ba4-6a88-4e64-83f4-d68667689c05_push.svg" alt="card-logo" class="card__logo">
+                        <h2 class="cards__title">Push for site</h2>
+                        <p class="cards__description">Все, что нужно, чтобы лучше общаться с посетителями сайта и превращать их в покупателей.</p>
+                    </div>
+                    <div class="cards__footer">
+                        <p class="cards__bonus">от <span>1 592</span> ₽</p>
+                        <a href="#" target="_blank" class="cards__link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <h1 class="services__title section-title">Популярные сервисы</h1>
+        <div class="services__wrapper">
+            <div class="services__item">
+                <img src="https://assets.flocktory.com/uploads/clients/2679/67946119-f46f-4e89-89a8-6bea85046d93_market.svg" alt="" class="services__icon">
+                <div class="services__wrapper">
+                    <h2 class="services__vendor">МТС Маркетолог</h2>
+                    <p class="services__text">Используйте различные каналы коммуникации: SMS, ,E-mail, Viber, Баннеры, Социальные сети</p>
+                </div>
+            </div>
+            <div class="services__item">
+                <img src="https://assets.flocktory.com/uploads/clients/2679/d0a92b05-d1b9-4141-9bd9-5e44b23881df_call.svg" alt="" class="services__icon">
+                <div class="services__wrapper">
+                    <h2 class="services__vendor">Бесплатный вызов 8800</h2>
+                    <p class="services__text">У надежного бизнеса всегда есть номер 8800</p>
+                </div>
+            </div>
+            <div class="services__item">
+                <img src="https://assets.flocktory.com/uploads/clients/2679/bd75765b-26c6-4d58-9bc8-41c51b7baaeb_cloud.svg" alt="" class="services__icon">
+                <div class="services__wrapper">
+                    <h2 class="services__vendor">#CloudMTS</h2>
+                    <p class="services__text">Экосистема облачных сервисов для крупного бизнеса и корпораций</p>
+                </div>
+            </div>
+            <div class="services__item">
+                <img src="https://assets.flocktory.com/uploads/clients/2679/301a1c08-48ae-4eba-b000-abfb3e73ee1e_caller.svg" alt="" class="services__icon">
+                <div class="services__wrapper">
+                    <h2 class="services__vendor">Виртуальная АТС</h2>
+                    <p class="services__text">Простой способ телефонизации офиса без дополнительных затрат</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>
+
+<!--1.SCSS, MobileFirst, БЭМ-->
+
+<!--2.Страница адаптивная. 2 экрана мобильный 320-768, десктопный 1024-1368-->
+
+<!--3.В зависимости от типа устройства блоки меняют отображение список, плитка-->
+
+<!--4.Блоки с услугами кликабельные-->
+
+<!--5.Подвал привязан к низу экрана, не должен отрываться от него, если мало контента. Если контента много, то контент сдвигает подвал вниз за экран.-->
+
+<!--6.Тени и ховеры в отдельном макете обозначены. При наведении должны меняться.-->

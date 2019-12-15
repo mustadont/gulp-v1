@@ -1,0 +1,62 @@
+@import "../variables";
+
+.footer {
+  padding: 24px 16px;
+  background-color: #adb0b3;
+  color: #fff;
+
+  &__wrapper {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 32px;
+  }
+
+  &--fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .footer {
+    padding: 50px 15px 40px 32px;
+
+    &__wrapper {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+
+  .footer {
+    padding-left: 85px;
+
+    &-navigation {
+      width: 80%;
+    }
+
+    &-description {
+      max-width: 200px;
+      margin-right: 30px;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

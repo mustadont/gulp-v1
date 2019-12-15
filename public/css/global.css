@@ -1,0 +1,3 @@
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma, Roboto, sans-serif}main{background-color:#fff;display:none}a{text-decoration:none}.hidden-mob{display:none}.section-title{font-size:24px;line-height:32px;margin-top:0;margin-bottom:30px;padding:0 16px}.open-menu .header-menu{background-color:transparent}.open-menu .header-menu::after{top:0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.open-menu .header-menu::before{top:0;-webkit-transform:rotate(45deg);transform:rotate(45deg)}@media (min-device-width: 768px){.section-title{text-align:center}}@media (min-device-width: 1024px){.hidden-mob{display:block}.section-title{margin-bottom:60px}}
+
+/*# sourceMappingURL=global.css.map */

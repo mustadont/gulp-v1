@@ -10,21 +10,23 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo">
-        <a href="#" target="_blank" class="logo__link">
+    <div class="header-logo">
+        <a href="#" target="_blank" class="header-logo__link">
             <img
-                src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="logo" class="logo__image">
-            <span class="logo__title hidden-mob">Бизнес маркет</span>
+                src="https://assets.flocktory.com/uploads/clients/2679/07cd93b9-ea0b-44fc-a82e-f9e9de4930a6_Group%202.svg" alt="logo" class="header-logo__image">
+            <span class="header-logo__title hidden-mob">Бизнес маркет</span>
         </a>
     </div>
 
     <a href="#" target="_blank" class="header__services text hidden-mob">Онлайн сервисы</a>
 
-    <div class="personal">
-        <a href="#" target="_blank" class="personal__link button">
-            <span class="personal__link_text hidden-mob">Личный кабинет</span>
+    <div class="header-personal">
+        <a href="#" target="_blank" class="header-personal__link button">
+            <span class="header-personal__link_text hidden-mob">Личный кабинет</span>
         </a>
-        <button class="menu-mobile"></button>
+        <div class="header__wrapper-menu">
+            <button class="header-menu"></button>
+        </div>
     </div>
 </header>
 
@@ -39,21 +41,21 @@
     <section class="tasks">
         <h1 class="section-title">Какую задачу вы&nbsp;решаете?</h1>
         <div class="tasks__changes">
-            <input type="radio" class="task__checkbox" id="publicity" name="radiobutton" checked>
-            <label class="task__label" for="publicity">
-                <span class="task__text">Реклама и продвижение</span>
+            <input type="radio" class="tasks__checkbox" id="publicity" name="radiobutton" checked>
+            <label class="tasks__label" for="publicity">
+                <span class="tasks__text">Реклама и продвижение</span>
             </label>
-            <input type="radio" class="task__checkbox" id="automation" name="radiobutton">
-            <label class="task__label" for="automation">
-                <span class="task__text">Автоматизация процессов</span>
+            <input type="radio" class="tasks__checkbox" id="automation" name="radiobutton">
+            <label class="tasks__label" for="automation">
+                <span class="tasks__text">Автоматизация процессов</span>
             </label>
-            <input type="radio" class="task__checkbox" id="it" name="radiobutton">
-            <label class="task__label" for="it">
-                <span class="task__text">IT и безопасность</span>
+            <input type="radio" class="tasks__checkbox" id="it" name="radiobutton">
+            <label class="tasks__label" for="it">
+                <span class="tasks__text">IT и безопасность</span>
             </label>
-            <input type="radio" class="task__checkbox" id="base" name="radiobutton">
-            <label class="task__label" for="base">
-                <span class="task__text">Работа с клиентской базой</span>
+            <input type="radio" class="tasks__checkbox" id="base" name="radiobutton">
+            <label class="tasks__label" for="base">
+                <span class="tasks__text">Работа с клиентской базой</span>
             </label>
 
         </div>
@@ -110,48 +112,124 @@
     <section class="services">
         <h1 class="services__title section-title">Популярные сервисы</h1>
         <div class="services__wrapper">
-            <div class="services__item">
+            <a class="services__item">
                 <img src="https://assets.flocktory.com/uploads/clients/2679/67946119-f46f-4e89-89a8-6bea85046d93_market.svg" alt="" class="services__icon">
                 <div class="services__wrapper">
                     <h2 class="services__vendor">МТС Маркетолог</h2>
                     <p class="services__text">Используйте различные каналы коммуникации: SMS, ,E-mail, Viber, Баннеры, Социальные сети</p>
                 </div>
-            </div>
-            <div class="services__item">
+            </a>
+            <a class="services__item">
                 <img src="https://assets.flocktory.com/uploads/clients/2679/d0a92b05-d1b9-4141-9bd9-5e44b23881df_call.svg" alt="" class="services__icon">
                 <div class="services__wrapper">
                     <h2 class="services__vendor">Бесплатный вызов 8800</h2>
                     <p class="services__text">У надежного бизнеса всегда есть номер 8800</p>
                 </div>
-            </div>
-            <div class="services__item">
+            </a>
+            <a class="services__item">
                 <img src="https://assets.flocktory.com/uploads/clients/2679/bd75765b-26c6-4d58-9bc8-41c51b7baaeb_cloud.svg" alt="" class="services__icon">
                 <div class="services__wrapper">
                     <h2 class="services__vendor">#CloudMTS</h2>
                     <p class="services__text">Экосистема облачных сервисов для крупного бизнеса и корпораций</p>
                 </div>
-            </div>
-            <div class="services__item">
+            </a>
+            <a class="services__item">
                 <img src="https://assets.flocktory.com/uploads/clients/2679/301a1c08-48ae-4eba-b000-abfb3e73ee1e_caller.svg" alt="" class="services__icon">
                 <div class="services__wrapper">
                     <h2 class="services__vendor">Виртуальная АТС</h2>
                     <p class="services__text">Простой способ телефонизации офиса без дополнительных затрат</p>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
+
+    <section class="corporate">
+        <h1 class="section-title">Покупка&nbsp;с корпоративного счета<br>
+            в пару кликов</h1>
+        <ul class="corporate-list">
+            <li class="corporate-list__item">В Бизнес маркете вы можете купить полезные сервисы для бизнеса онлайн</li>
+            <li class="corporate-list__item">Оплата с вашего корпоративного мобильного счета</li>
+            <li class="corporate-list__item">Счет за услуги в привычном формате</li>
+            <li class="corporate-list__item">Покупка и доступ к услугам в режиме онлайн</li>
+        </ul>
+
+        <a href="#" target="_blank" class="corporate__link">Смотреть все сервисы</a>
+    </section>
 </main>
+<footer class="footer">
+    <div class="footer__wrapper">
+        <div class="footer-description">
+            <h1 class="footer__title">Бизнес маркет</h1>
+            <p class="footer__text">Покупайте бизнес сервисы онлайн, оплатив
+                с мобильного счета вашей организации</p>
+        </div>
+
+        <nav class="footer-navigation">
+            <ul class="navigation navigation--main">
+                <li class="navigation__item">
+                    <input type="checkbox" class="navigation__checkbox">
+                    <span class="navigation__item--title">Помощь</span>
+                    <ul class="navigation navigation-inner">
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Оплата и доступ к сервисам</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Правовая информация</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Обратная связь</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Контакты</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Перейти на сайт mts.ru</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <input type="checkbox" class="navigation__checkbox">
+                    <span class="navigation__item--title">Реклама и продвижение</span>
+                    <ul class="navigation navigation-inner">
+                        <li class="navigation__item--inner"><a href="#" target="_blank">МТС коммуникатор</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Цифровой ассистент</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Голосовой робот</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Push for site</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Анализ геоданных</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">TVBit</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <input type="checkbox" class="navigation__checkbox">
+                    <span class="navigation__item--title">Автоматизация процессов</span>
+                    <ul class="navigation navigation-inner">
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Проверка контрагентов</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Конструктор документов</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">CRM Простой бизнес</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Анализ геоданных</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Видеонаблюдение (Larga)</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Мобильные сотрудники</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Virtual POS</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <input type="checkbox" class="navigation__checkbox">
+                    <span class="navigation__item--title">Помощь</span>
+                    <ul class="navigation navigation-inner">
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Оплата и доступ к сервисам</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Правовая информация</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Обратная связь</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Контакты</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Перейти на сайт mts.ru</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item">
+                    <input type="checkbox" class="navigation__checkbox">
+                    <span class="navigation__item--title">Реклама и продвижение</span>
+                    <ul class="navigation navigation-inner">
+                        <li class="navigation__item--inner"><a href="#" target="_blank">МТС коммуникатор</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Цифровой ассистент</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Голосовой робот</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Push for site</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">Анализ геоданных</a></li>
+                        <li class="navigation__item--inner"><a href="#" target="_blank">TVBit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <small class="copyright">© 2019 ПАО «МТС». Все права защищены.</small>
+</footer>
+<script src="main.js"></script>
 </body>
 </html>
-
-<!--1.SCSS, MobileFirst, БЭМ-->
-
-<!--2.Страница адаптивная. 2 экрана мобильный 320-768, десктопный 1024-1368-->
-
-<!--3.В зависимости от типа устройства блоки меняют отображение список, плитка-->
-
-<!--4.Блоки с услугами кликабельные-->
-
-<!--5.Подвал привязан к низу экрана, не должен отрываться от него, если мало контента. Если контента много, то контент сдвигает подвал вниз за экран.-->
-
-<!--6.Тени и ховеры в отдельном макете обозначены. При наведении должны меняться.-->

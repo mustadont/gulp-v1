@@ -1,0 +1,75 @@
+@import "../variables";
+.services {
+  padding: 5px 16px;
+  margin-bottom: 30px;
+
+  &__title {
+    padding: 0;
+  }
+
+  &__item {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 25px 20px;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      border-color: transparent;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__vendor {
+    font-size: $font-medium;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: $font-regular;
+    line-height: 24px;
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .services {
+    padding: 6px 32px;
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      max-width: 48%;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+      margin-bottom: 32px;
+
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+
+  .services {
+    margin-bottom: 70px;
+    padding: 6px 84px;
+
+    &__item {
+      max-width: 47%;
+    }
+  }
+}

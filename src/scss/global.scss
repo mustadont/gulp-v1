@@ -1,0 +1,63 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, Roboto, sans-serif;
+}
+
+main {
+  background-color: #fff;
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden-mob {
+  display: none;
+}
+
+.section-title {
+  font-size: $font-medium;
+  line-height: 32px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 0 16px;
+}
+
+.open-menu {
+  .header-menu {
+    background-color: transparent;
+
+    &::after {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      top: 0;
+      transform: rotate(45deg);
+    }
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+  .section-title {
+    text-align: center;
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+  .hidden-mob {
+    display: block;
+  }
+
+  .section-title {
+    margin-bottom: 60px;
+  }
+}

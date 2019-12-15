@@ -1,0 +1,117 @@
+@import "../variables";
+
+.cards {
+  position: relative;
+  min-height: 500px;
+  overflow-x: scroll;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 25px;
+    border-radius: 8px;
+    border: 1px solid #e2e5eb;
+    min-width: 260px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: transparent;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+      .cards__link {
+        background-color: #c90000;
+        color: #fff;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    padding: 0 16px;
+    position: absolute;
+  }
+
+  &__header, &__footer {
+    width: 100%;
+  }
+
+  &__title {
+    font-size: $font-medium;
+    max-width: 200px;
+  }
+
+  &__description {
+    margin-top: 0;
+    font-size: $font-regular;
+    line-height: 24px;
+  }
+
+  &__bonus {
+    font-size: 21px;
+    font-weight: 700;
+    margin-top: 0;
+
+    span {
+      font-size: 34px;
+    }
+
+    &--flex {
+      display: flex;
+      align-items: center;
+
+      b {
+        font-size: 45px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    background: #E2E5EB;
+    border-radius: 5px;
+    padding: 8px 15px;
+    text-align: center;
+    color: #000;
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .cards {
+    &__wrapper {
+      padding: 0 32px;
+    }
+
+    &__item {
+      padding: 30px;
+      width: 276px;
+    }
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+
+  .cards {
+    padding: 0 84px;
+    overflow-x: auto;
+
+    &__wrapper {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      position: relative;
+    }
+
+    &__item {
+      min-width: 230px;
+    }
+  }
+}

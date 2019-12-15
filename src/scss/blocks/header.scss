@@ -1,0 +1,117 @@
+@import "../variables";
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: #fff;
+  box-shadow: 0 0 6px rgba(110, 119, 130, 0.25);
+
+  &__wrapper-menu {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  &-personal {
+    display: flex;
+    align-items: center;
+
+    &__link {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url('https://assets.flocktory.com/uploads/clients/2679/30a78d33-6822-4d89-b905-6e621d0d9e52_user.svg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  &-menu {
+    display: block;
+    position: relative;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 2px;
+    background-color: #b0b7bf;
+    cursor: pointer;
+
+    &::before, &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #b0b7bf;
+      left: 0;
+      transition: .6s all ease-in;
+    }
+
+    &::before {
+      top: -5px;
+    }
+
+    &::after {
+      top: 5px;
+    }
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .header {
+    padding: 8px 32px;
+
+    &-personal__link {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+
+  .header {
+    padding: 16px 84px;
+    justify-content: flex-start;
+
+    &-menu {
+      display: none;
+    }
+
+    &__services {
+      margin-left: 70px;
+      color: #000;
+    }
+
+    &-personal {
+      margin-left: auto;
+
+      &__link {
+        width: auto;
+        height: auto;
+        padding: 10px 30px;
+        color: #fff;
+        font-size: $font-regular;
+        background: #dd0000;
+        border-radius: 5px;
+      }
+    }
+
+    &-logo {
+      &__title {
+        display: inline;
+        font-size: 20px;
+        color: #e30611;
+      }
+    }
+  }
+}

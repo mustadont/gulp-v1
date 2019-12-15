@@ -1,0 +1,73 @@
+@import "../variables";
+.banner {
+  background-color: #f2f3f7;
+  padding: 30px 16px 220px;
+  background-image: url('https://assets.flocktory.com/uploads/clients/2679/749e6f3a-cbfe-48be-a7d6-4aeb3163f5e3_hero_banner_image.png');
+  background-position: center bottom;
+  background-size: 229px 203px;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+
+  &__text {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+
+  &__title {
+    margin-top: 0;
+    font-size: $font-large;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: $font-regular;
+    background: #dd0000;
+    border-radius: 5px;
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .banner {
+    padding: 54px 270px 80px 32px;
+    background-position: right 20px bottom;
+    background-size: 368px 326px;
+    margin-bottom: 45px;
+
+    &__text {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-family: Tahoma, Roboto, sans-serif;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__link {
+      font-size: 21px;
+    }
+  }
+
+  @media (min-device-width: $screen-desktop) {
+
+    .banner {
+      padding: 70px 35% 80px 84px;
+      background-size: 473px 419px;
+
+      &__text {
+        font-size: $font-medium;
+      }
+
+      &__title {
+        font-size: 50px;
+        line-height: 54px;
+        max-width: 650px;
+      }
+    }
+  }
+}

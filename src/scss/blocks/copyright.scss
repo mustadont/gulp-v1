@@ -1,0 +1,25 @@
+@import "../variables";
+
+.copyright {
+  display: block;
+  color: #6e7782;
+  font-size: 12px;
+  background-color: #fff;
+  padding: 20px 16px;
+  width: calc(100% + 32px);
+  margin-left: -16px;
+  margin-bottom: -24px;
+}
+
+
+@media (min-device-width: $screen-tablet) {
+
+  .copyright {
+    display: inline;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+    margin: auto;
+    color: #fff;
+  }
+}

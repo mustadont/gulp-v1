@@ -1,0 +1,85 @@
+@import "../variables";
+
+.corporate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+
+  &-list {
+    margin: 0 0 30px;
+    padding: 0 16px 0 50px;
+    list-style: none;
+
+    &__item {
+      position: relative;
+      font-size: 16px;
+
+      &:not(:last-child) {
+        line-height: 24px;
+        margin-bottom: 25px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: -3px;
+        left: -40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+      &:first-child::before {
+        background-image: url("https://assets.flocktory.com/uploads/clients/2679/ae478613-5e45-4361-a13e-c461bdc3e8dd_Group%2048.svg");
+      }
+
+      &:nth-child(2)::before {
+        background-image: url("https://assets.flocktory.com/uploads/clients/2679/c318cba1-eb8e-4b97-9938-68cffe7608dc_Group%2083.svg");
+      }
+
+      &:nth-child(3)::before {
+        background-image: url("https://assets.flocktory.com/uploads/clients/2679/12c9ed78-0f08-4846-9c13-aa2da08d1c54_Group%2085.svg");
+      }
+
+      &:last-child::before {
+        background-image: url("https://assets.flocktory.com/uploads/clients/2679/11884142-a35a-46f4-ba63-0aae0d3df3f5_Group%2088.svg");
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: $font-regular;
+    background: #dd0000;
+    border-radius: 5px;
+  }
+}
+
+@media (min-device-width: $screen-tablet) {
+
+  .corporate {
+    padding: 0 32px 60px;
+    display: block;
+
+    &__link {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (min-device-width: $screen-desktop) {
+
+  .corporate {
+    padding: 0 84px 135px;
+    background-image: url("https://assets.flocktory.com/uploads/clients/2679/907aca98-0973-46de-8dbe-4d7a7893c428_block_3_image.png");
+    background-repeat: no-repeat;
+    background-position: right 84px bottom 90px;
+    background-size: 422px 339px;
+  }
+}
